@@ -1,0 +1,7 @@
+{
+    "require": {
+        "paypal/rest-api-sdk-php": "^1.14",
+        "stripe/stripe-php": "^6.28",
+        "tecnickcom/tcpdf": "^6.2"
+    }
+}

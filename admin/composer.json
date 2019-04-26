@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tecnickcom/tcpdf": "^6.2",
+        "phpmailer/phpmailer": "^6.0"
+    }
+}

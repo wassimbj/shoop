@@ -1,0 +1,20 @@
+php_value upload_max_filesize 16M
+php_value post_max_size 16M
+
+RewriteEngine on
+
+RewriteRule ^home/?$ index.php
+
+RewriteRule ^add-product/?$ add_product.php
+
+RewriteRule ^edit-product/?$ edit_product.php
+
+RewriteRule ^add-users/?$ users.php?page=add
+
+RewriteRule ^edit-users/?$ users.php?page=manage
+
+RewriteRule ^edit-cates/?$ categorys.php?page=manage_cate
+
+RewriteRule ^edit-discounts/?$ discounts.php?page=manage_discounts
+
+ErrorDocument 404 "<h1 align='center'> 404 PAGE </h1> back to home >> <a href='index.php'>Back>></a>"

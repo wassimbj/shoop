@@ -1,0 +1,25 @@
+php_value upload_max_filesize 16M
+php_value post_max_size 16M
+php_flag output_buffering On
+
+RewriteEngine on
+
+RewriteRule ^home/?$ index.php
+
+RewriteRule ^shop/?$ shop.php
+
+RewriteRule ^shoping-cart/?$ shoping-cart.php
+
+RewriteRule ^join/?$ join.php
+
+RewriteRule ^login/?$ login.php
+
+RewriteRule ^profile/?$ customer_profile.php
+
+RewriteRule ^contact-us/?$ contact.php
+
+RewriteRule ^about-us/?$ about.php
+
+RewriteRule ^([a-zA-Z0-9'()+_-]+)/?$ product-detail.php?p=$1 [QSA]
+
+ErrorDocument 404 /shoop/404.php
